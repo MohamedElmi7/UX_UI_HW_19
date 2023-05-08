@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: #575757;
   margin-right: 40px;
@@ -88,7 +91,7 @@ h2 {
   font-weight: bolder;
   margin-top: 40px;
 }
-#mySkillsbutton{
+a , #mySkillsbutton{
   width: 169px;
   height: 41px;
   background-color: #6F7DF7;
@@ -99,7 +102,7 @@ h2 {
   z-index: 9999;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-#mySkillsbutton:active {
+a, #mySkillsbutton:active {
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
   pointer-events: none;

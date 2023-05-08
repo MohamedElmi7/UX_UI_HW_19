@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<script src= "./js/index.js"> </script>
 <html>
-<script src= "./js/index.js"> </script>
 <head>
     <title></title>
 </head>
@@ -26,8 +24,8 @@
 <section class="heroImg"><div class="heroText">
     <h1 class="sectionHead">HI I'M MOHAMED ELMI</h1>
 <p class="aboutMe">A Passionate Young Buck venturing into the world of Ux/UI design With A Creative Appetite. </p>
-<button id="mySkillsbutton" type="button" data-target="mySkills">My Skills</button> 
-<button id="myWorkbutton" type="button" data-target="myWork"> My Work</button>
+<button id="mySkillsbutton" type="button" href="#mySkills">My Skills</button>
+<button id="myWorkbutton" type="button" href="#myWork"> My Work</button>
 </div>
 
     <div class="hero">
@@ -40,8 +38,8 @@
 
  <!--  My UX Skills section coded using CSS flex -->
 
-<section id="mySkills" class="mySkills">
-    <h1>MY SKILLS</h1>
+<section class="mySkills">
+    <h1 id="mySkills">MY SKILLS</h1>
     <div class="flexContainer">
         <div class="uxResearch">
             <h4>UX Research</h4>
@@ -86,8 +84,8 @@
 
 <hr>
 <!-- My Work Section Constructed using CSS Grid -->
-<section id="myWork" class="myWork">
-    <h1>My Work</h1>
+<section class="myWork">
+    <h1 id="myWork">MY WORK</h1>
     <div class="workGrid">
         <div class="smol">
             <img src="../UX_UI_HW_19/Images/Smol hero Imaage.png" alt="Smol mobile case study" width="387" height="324">
@@ -128,5 +126,16 @@
   </footer>
   
 </body>
-
+<script src= "../UX_UI_HW_19/js/index.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("mySkillsbutton").addEventListener("click", function() {
+        smoothScroll("mySkills");
+      });
+  
+      document.getElementById("myWorkbutton").addEventListener("click", function() {
+        smoothScroll("myWork");
+      });
+    });
+  </script>
 </html>
